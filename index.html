@@ -36,15 +36,15 @@
             text-align: center;
         }
         .card {
-            width: 300px; /* 增加卡片大小 */
-            height: 450px;
+            width: 100%;  /* 讓卡片根據父容器調整 */
+            max-width: 350px; /* 限制最大寬度 */
+            height: auto; /* 根據圖片高度調整 */
             perspective: 1000px; 
-            display: flex; /* 讓它能在父容器內置中 */
+            display: flex;
             justify-content: center;
             align-items: center;
-            margin: auto; /* 讓卡片在父容器內自動置中 */
+            margin: auto;
         }
-
         .inner-card {
             width: 100%;
             height: 100%;
@@ -101,21 +101,18 @@
         <h2>歡迎來到高級便女培育學院</h2>
         <p>最極致的淫亂體驗，最專業的學生服務，隨時待命。</p>
     </div>
-
-    <div class="card" onclick="flipCard(this)">
-        <div class="inner-card">
-            <div class="front">
-                <img src="學生證 正面.png" alt="照片正面">
-                <h3>血影蝶</h3>
-                <p>性等級：S</p>
-                <p>專長：【母畜認證】【長期性處理委員】</p>
-            </div>
-            <div class="back">
-                <img src="學生證 背面.png" alt="照片背面">
-            </div>
+    
+<div class="card" onclick="flipCard(this)">
+    <div class="inner-card">
+        <div class="front">
+            <img src="學生證 正面.png" alt="照片正面">
+        </div>
+        <div class="back">
+            <img src="學生證 背面.png" alt="照片背面">
         </div>
     </div>
-
+</div>
+    
     <div class="container" id="booking">
         <h2>預約系統</h2>
         <p>選擇您的理想學生，安排您的完美體驗。</p>
