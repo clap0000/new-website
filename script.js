@@ -10,7 +10,7 @@ const totalSlides = slides.length;
 function changeSlide() {
     index = (index + 1) % totalSlides;
     slidesContainer.style.transform = `translateX(-${index * 100}%)`;
-    requestAnimationFrame(() => setTimeout(changeSlide, 3000));
+    requestAnimationFrame(() => setTimeout(changeSlide, 5000));
 }
 
 // 啟動動畫
