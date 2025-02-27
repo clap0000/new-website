@@ -3,11 +3,26 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 let index = 0;
-const slides = document.querySelectorAll(".slides a");
+const slidesContainer = document.querySelector(".slides");
+const slides = slidesContainer.querySelectorAll("a");
+const totalSlides = slides.length;
 
 function changeSlide() {
-    index = (index + 1) % slides.length;
-    document.querySelector(".slides").style.transform = `translateX(-${index * 100}%)`;
+    index = (index + 1) % totalSlides;
+    slidesContainer.style.transform = `translateX(-${index * 100}%)`;
+    requestAnimationFrame(() => setTimeout(changeSlide, 3000));
 }
 
-setInterval(changeSlide, 3000); // 每 3 秒換一張
+// 啟動動畫
+setTimeout(changeSlide, 3000);
+
+// 手動控制
+function prevSlide() {
+    index = (index - 1 + totalSlides) % totalSlides;
+    slidesContainer.style.transform = `translateX(-${index * 100}%)`;
+}
+
+function nextSlide() {
+    index = (index + 1) % totalSlides;
+    slidesContainer.style.transform = `translateX(-${index * 100}%)`;
+}
