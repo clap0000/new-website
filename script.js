@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    alert("歡迎來到高級便女培育學院！\n這裡的一切都只是為了我的性癖而生，請勿上網上線！");
+    alert("歡迎來到高級便女培育學院！\n這裡的一切都只是因為我閒的沒事照我的性癖寫出來練習的網站，請勿上網上線！");
 });
 
 let index = 0;
