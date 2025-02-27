@@ -1,1 +1,99 @@
 
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>淫慾學院外攬服務平台</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 10px;
+            background-color: #FF8EFF;
+            color: #333;
+        }
+        header {
+            background-color: #ff69b4;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo img {
+            width: 100px;
+            display: block;
+        }
+        nav {
+            display: flex;
+            justify-content: flex-end;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        .banner {
+            position: relative;
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+        }
+        .slides {
+            display: flex;
+            width: 300%;
+            transition: transform 1s ease-in-out;
+        }
+        .slides a {
+            width: 100%;
+            flex-shrink: 0;
+        }
+        .slides img {
+            width: 100%;
+            display: block;
+        }
+        /* 定義動畫 */
+        @keyframes slide {
+            0% { transform: translateX(0%); }
+            33% { transform: translateX(-100%); }
+            66% { transform: translateX(-200%); }
+            100% { transform: translateX(0%); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="你的logo.png" alt="LOGO">
+        </div>
+        <nav>
+            <a href="#home">首頁</a>
+            <a href="#students">學生名錄</a>
+            <a href="#booking">預約</a>
+            <a href="#news">最新消息</a>
+            <a href="#vip">VIP專區</a>
+            <a href="#school">關於學校</a>
+            <a href="#contact">聯絡我們</a>
+        </nav>
+    </header>
+        <div class="banner">
+            <div class="slides">
+                <a href="#students">
+                    <img src="image1.jpg" alt="學生名錄">
+                </a>
+                <a href="#booking">
+                    <img src="image2.jpg" alt="預約">
+                </a>
+                <a href="#vip">
+                    <img src="image3.jpg" alt="VIP專區">
+                </a>
+            </div>
+        </div>
+
+        <!-- 引入 JavaScript 檔案 -->
+        <script src="script.js"></script>
+ 
+</body>
+</html>
